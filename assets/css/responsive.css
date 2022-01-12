@@ -1,0 +1,349 @@
+/* PC */
+@media (min-width: 1024px) {
+    .nav-mobile-open-btn, .header-nav-mobile, .home-category-mobile {
+        display: none;
+    }
+
+    
+}
+
+/* Tablet */
+@media(min-width: 768px) and (max-width: 1024px) {
+    .grid-row__col-4-tb {
+        width: 33.3333%;
+    }
+
+    .grid-row__col-8-tb {
+        width: 66.6666%;
+    }
+
+
+    .nav-mobile-open-btn, .header-nav-mobile, .home-category-mobile {
+        display: none;
+    }
+
+    .header-logo {
+        width: 180px;
+    }
+
+    .header-content__heading-text {
+        font-size: 2.5rem;
+    }
+
+    .header-content__heading-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-content__heading-phone {
+        font-size: 1.5rem;
+        margin-left: 4px;
+    }
+
+    .header-nav__item {
+        margin: 0 6px;
+    }
+
+    .header-nav__item:not(:first-child)::before {
+        height: 13px;
+        left: -6px;
+    }
+
+    .header-nav__link {
+        font-size: 1.1rem;
+    }
+
+    .header-search {
+        width: 150px;
+        padding: 4px 12px;
+        margin-left: 6px;
+    }
+
+    .slide{
+        width: 100%;
+        height: auto;
+    }
+
+    .slide__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-row__col-4-tb:nth-child(7),
+    .grid-row__col-4-tb:nth-child(8) {
+        display: none;
+
+    }
+
+    .registration__heading {
+        font-size: 2.5rem;
+    }
+
+    .registration__form {
+        width: 300px;
+    }
+
+    .registration-form__btn {
+        font-size: 1.4rem;
+    }
+
+    .footer-content-copyright__title, .footer-content__fanpage h4, .footer-content__map h4 {
+        font-size: 1.6rem;
+    }
+
+    .footer-content__copyright span{
+        font-size: 1.3rem;
+    }
+
+    .footer-team-member__img {
+        width: 40px;
+    }
+
+    .footer-team-member__name {
+        font-size: 1.3rem;
+    }
+
+    /* responsive login */
+    .login__background {
+        width: 40%;
+    }
+
+}
+
+/* --------------------------- */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .header-logo {
+        width: 100px;
+    }
+
+    .header-content__heading, .header-nav, .header-nav__list, .list__group, .list__heading, .registration, .product-btn-next-prev {
+        display: none;
+    }
+    .nav-mobile-open-btn {
+        display: block;
+        font-size: 2rem;
+        border: none;
+        background-color: #fff;
+        transition: ease .2s;
+    }
+
+    .nav-mobile-open-btn:focus  {
+        transform: rotate(-90deg)
+    }
+    
+    .header-nav-mobile {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        background-color: #fff;
+        z-index: 1;
+        display: none;
+        animation: close ease .4s;
+        
+        
+    }
+
+    .open {
+        display: block;
+        animation: moveLeft ease 0.4s;
+        
+    }
+
+
+    .header-nav-mobile__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ccc
+    }
+
+    .header-nav-mobile__img {
+        width: 60px;
+        height: auto;
+    }
+
+    .nav-mobile-close-btn {
+        font-size: 2rem;
+        display: block;
+        border: none;
+        background-color: #fff;
+    }
+
+    .header-nav-mobile__list {
+        list-style: none;
+        margin: 10px 10px;
+    }
+
+    .header-nav-mobile__item {
+        padding: 8px 0;
+    }
+
+    .header-nav-mobile__link {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.4rem;
+    }
+
+    .header-nav-mobile__icon {
+        padding-right: 10px;
+    }
+
+    /* slide */
+    .slide{
+        width: 100%;
+        height: 250px;
+    }
+
+    .slide__img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .slide-btn__next, .slide-btn__prev {
+        display: none;
+    }
+
+    .change-img {
+        bottom: 6px
+    }
+
+    .change-btn {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-right: 12px;
+        border: 2px solid #fff;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .change-btn.active {
+        background-color: rgb(82, 144, 61, 0.5);
+    }
+
+    .home-category-mobile {
+        position: relative;
+        width: 100%;
+        padding: 24px 0;
+        margin-top: 24px;
+        margin-bottom: -32px;
+        box-shadow: 0 0 10px #ccc; 
+    }
+
+    /* end slide */
+
+
+    /* danh mục sản phẩm */
+    .home-category-mobile__title {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 6px 18px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 0 4px #ccc;
+        color: var(--primary-color);
+        font-size: 1.2rem
+    }
+
+    .category-mobile__item {
+        margin-top: 16px;
+    }
+
+    .category-mobile__link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .category-mobile__img {
+        width: 30px;
+        height: 30px;
+        padding-bottom: 8px;
+    }
+
+    .category-mobile__name {
+        text-align: center;
+        color: #333;
+        line-height: 1.4rem;
+        
+    }
+    /* --------------------------------- */
+
+
+    /* sản phẩm */
+    .product__heading {
+        font-size: 1.4rem;
+        padding: 4px 0;
+    }
+
+    .product__item {
+        margin-top: 12px;
+    }
+
+    .product-item-body__name {
+        font-size: 1.2rem;
+    }
+
+    .product-item-body__price {
+        margin: 4px 0 6px 0;
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+
+    /* Footer */
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content__copyright {
+        text-align: center;
+    }
+
+    .footer-content__fanpage, .footer-content__map {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    /* ------------------------------- */
+
+    .grid__row-mb--srcoll {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 18px;
+    }
+
+    .grid__row-mb--srcoll::-webkit-scrollbar {
+        background-color: #f5f5f5;
+        width: 5px;
+        height: 2px;
+    }
+    
+    .grid__row-mb--srcoll::-webkit-scrollbar-thumb {
+        background-color: var(--primary-color);
+    }
+
+    .grid-row__col-12-mb{
+        width: 100%;
+    }
+
+    .grid-row__col-6-mb{
+        width: 49.9999%;
+    } 
+    
+    /* responsive login */ 
+    .login__background {
+        width: 0;
+    }
+}
