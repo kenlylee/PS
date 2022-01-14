@@ -75,18 +75,11 @@
 
     }
 
-    .registration__heading {
-        font-size: 2.5rem;
+     .banner__btn {
+        font-size: 1.1rem;
+        padding: 0 8px;
     }
-
-    .registration__form {
-        width: 300px;
-    }
-
-    .registration-form__btn {
-        font-size: 1.4rem;
-    }
-
+    
     .footer-content-copyright__title, .footer-content__fanpage h4, .footer-content__map h4 {
         font-size: 1.6rem;
     }
