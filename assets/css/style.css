@@ -311,68 +311,42 @@
 
 
 /* Đăng kí nhận tư vấn */
-.registration {
+.banner {
     position: relative;
     width: 100%;
-    height: 200px;
     margin: 32px 0;
-    background: url('../img/banner/background/background1.jpg') center / cover no-repeat;
-    background-attachment: fixed;
 }
 
-.registration__overlay {
+.banner__img {
+    width: 100%;
+    height: auto;
+}
+
+.banner__btn {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.registration__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.registration__heading {
-    font-size: 4rem;
-    font-weight: 600;
-}
-
-.registration__heading:first-child {
-    color: #fff;
+    bottom: 8%;
+    left: 42%;
     display: inline-block;
-}
-
-.registration__form {
-    width: 500px;
-    background-color: #fff;
-    display: flex;
-}
-
-.registration-form__input {
-    width: 80%;
-    padding: 8px 8px;
-    border: none;
-    outline: none;
-}
-
-.registration-form__btn {
     text-decoration: none;
-    display: inline-block;
-    padding: 8px 0;
-    background-color: var(--primary-color);
+    padding: 2px 16px;
+    background-color: #fad84c;
     color: #fff;
-    flex: 1;
-    text-align: center;
-    font-size: 1.4rem
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: ease .3s;
 }
+
+.banner__btn:hover {
+    background-color: #000;
+    color: #fad84c;
+    left: 43%;
+}
+
+.banner__btn-icon {
+    margin-right: 6px;
+}
+
 
 
 /* FOOTER */
