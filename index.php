@@ -417,18 +417,9 @@ include './config.php';
             </div>
 
             <!--Đăng ký nhận tư vấn-->
-            <div class="registration">
-                <div class="registration__overlay"></div>
-                <div class="registration__content">
-                    <div class="registration__heading">
-                        <span>ĐĂNG KÝ NHẬN</span>
-                        <span style="color: var(--primary-color);">TƯ VẤN MIỄN PHÍ</span>
-                    </div>
-                    <div class="registration__form">
-                        <input type="text" class="registration-form__input" placeholder="Nhập email...">
-                        <a href="./dangky.php" class="registration-form__btn">ĐĂNG KÝ</a>
-                    </div>
-                </div>
+            <div class="banner">
+                <img src="./assets/img/banner/background/Baner.jpg" class="banner__img">
+                <a href="" class="banner__btn"><i class="fas fa-arrow-right banner__btn-icon"></i> Tại đây</a>
             </div>
 
             <!--Sản phẩm-->
